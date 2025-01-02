@@ -10,7 +10,8 @@
     "mongoose": "^8.4.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node index.js"
   },
   "name": "rudra",
   "version": "1.0.0",

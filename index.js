@@ -12,6 +12,7 @@ import visitsRoute from "./routes/visits.route.js";
 import visitRemarkRoute from "./routes/visitRemark.route.js";
 import DumpRoute from "./routes/dump.route.js";
 import newClientRoute from "./routes/newClient.route.js";
+import companyRoute from "./routes/company.route.js";
 
 import { frontEndPort } from "./settings.js";
 
@@ -59,6 +60,7 @@ app.use("/api/clientVisits", visitsRoute);
 app.use("/api/visitRemark", visitRemarkRoute);
 app.use("/api/dump-clients", DumpRoute);
 app.use("/api/newClients", newClientRoute);
+app.use("/api/company", companyRoute);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
